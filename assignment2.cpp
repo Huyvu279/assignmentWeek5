@@ -39,7 +39,7 @@ void TongLaBlum(int* blumNumbers, int blumCount, int N) {
             int sum = blumNumbers[i] + blumNumbers[j];
             for (int k = 0; k < blumCount; k++) {
                 if (blumNumbers[k] == sum && sum < N) {
-                    std::cout << "Cap so Blum: (" << blumNumbers[i] << ", " << blumNumbers[j] << ") co tong la " << sum << "\n";
+                    cout << "Cap so Blum: (" << blumNumbers[i] << ", " << blumNumbers[j] << ") co tong la " << sum << "\n";
                     break;
                 }
             }
@@ -64,7 +64,7 @@ int main() {
 
     cout << "Cac so Blum nho hon " << N << " la: ";
     for (int i = 0; i < blumCount; i++) {
-        std::cout << blumNumbers[i] << " ";
+        cout << blumNumbers[i] << " ";
     }
     cout << "\n";
     TongLaBlum(blumNumbers, blumCount, N);
